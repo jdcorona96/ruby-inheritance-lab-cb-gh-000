@@ -4,4 +4,11 @@ class Student < User
     @knowledge = []
     
   end
+
+  attr_reader :knowledge
+
+  def learn(knowledge)
+    @knowledge << knowledge
+    
+  end
 end
